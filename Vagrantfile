@@ -22,7 +22,7 @@ Vagrant::Config.run do |config|
 
     chef.add_recipe("vagrant_main")
     # Uncomment the recipes you would want this app to use
-    # chef.add_recipe("vagrant_main::mysql")
+    chef.add_recipe("vagrant_main::phing")
     # chef.add_recipe("vagrant_main::rabbitmq")
     chef.json = {
       "xdebug" => {
